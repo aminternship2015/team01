@@ -1,0 +1,86 @@
+urls and controllers:
+
+user and profile:
+GET 		/				if not logged, display 2 forms: 'signup' and 'signin', else my tweets like on twitter
+POST		/signup			registers user 
+POST		/signin			login user
+
+GET			/{username}/profile	user profile, if no id then display my (check if logged)
+PUT			/profile				updates my profile, not applied to other's profile, here can upload/update avatar
+DELETE		/profile				deletes my profile and user info
+
+
+followers:
+GET			/{username}/followers - my followers, or username's followers if provided
+
+
+following:
+GET 		/{username}/following - list of users I follow, or user follows if userid provided
+POST		/follow/{username} - follow the user with username, username is POST param
+DELETE		/unfollow/{username} - unfollow the user
+
+
+tweets: 
+GET 		/{username}/tweets - user's tweets if provided, or my own tweets
+POST		/tweet - posts new tweet
+PUT			/tweet/tweetid	edit the tweet, only own
+DELETE		/tweet/tweetid - deletes, can only own tweet
+
+
+  Controller - base controller
+
+  UserController: holds - user and profile, followers, following
+
+  TweetController: holds - tweets
+
+
+entities:
+  User: userId(ID), username(USERNAME), firstName(FIRST_NAME), lastName(LAST_NAME), email(EMAIL)
+  Tweet
+  File (for images)
+
+
+
+views:
+	layouts/main - the layout for whole application, we don't have admin area, only some of admin's functinality
+	/ - user/home.jsp
+	/profile - user/profile
+	/followers - user/followersList
+	/following - user/followingList
+	/tweets - tweet/tweetsList, has a follow/unfollow button if it isn't own tweets page.
+	
+
+partial views:
+	signup - partials/signUpForm
+	signin - partials/signInForm
+	post a tweet - partials/tweetForm
+
+
+steps:
+
+1. try to connect to a DB MS SQL SERVER
+  create DB twitter
+
+2. make models
+
+3. make Controller, UserController, TweetController
+
+4. make some methods and then try autherntication
+
+user stories:
+1. user opens a browser and see signin and register forms, so he can either signup or signin
+   on sigin user enters username and password
+   on signup user enters username, first name, last name, email and password
+   after sigin/signup user sees his main page with his tweets
+
+2. any logged user cand follow/unfollow any other user's tweets
+   
+3. 'new feed' - any user has such page, with paginated tweets in backward cronological order.
+	this page contains only feed from followed users
+	tweet cotains: user(tweet owner), time tweeted, tweet body
+
+web services:
+TBD
+
+
+

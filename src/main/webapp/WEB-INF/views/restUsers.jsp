@@ -28,7 +28,7 @@ pageEncoding="UTF-8"%>
 
 <%@include file="partial/nav.jsp" %>
 
-<h3>Hello REST WEB SERVICES</h3>
+<h3>Hello REST WEB SERVICES!</h3>
 
 
 

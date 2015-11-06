@@ -42,7 +42,7 @@ Password:<input type="password" name="password" /><br/>
 <button class="btn waves-effect waves-ligh cyan lighten-3t" type="submit" name="action" value="create">Create User</button><br/><br/>
 <button class="btn waves-effect waves-ligh cyan lighten-3t" type="submit" name="action" value="update">Update User</button><br/><br/>
 <button class="btn waves-effect waves-ligh cyan lighten-3t" type="submit" name="action" value="delete">Delete User</button><br/><br/>
-<button class="btn waves-effect waves-ligh cyan lighten-3t GET" type="submit" name="action" value="deleteid">Get User By Id</button><br/><br/>
+<button class="btn waves-effect waves-ligh cyan lighten-3t get" type="submit" name="action" value="deleteid">Get User By Id</button><br/><br/>
 <button class="btn waves-effect waves-ligh cyan lighten-3t" type="reset" >Reset Form</button>
 </form><p><a href="userapi"><button class="btn waves-effect waves-ligh cyan lighten-3t">View all users</button></a></p>
 

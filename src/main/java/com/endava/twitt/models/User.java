@@ -17,8 +17,12 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 @Entity
 @Table(name = "users")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})  
 public class User {
 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -39,6 +43,7 @@ public class User {
 	
 	@OneToMany(targetEntity = Tweets.class, mappedBy = "user", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	@OrderBy("publishedDate DESC")
+	@JsonBackReference
 	private List<Tweets> tweet;
 
 	/*@OneToMany(targetEntity = Follow.class, mappedBy = "userFollowed", fetch = FetchType.EAGER, cascade = CascadeType.ALL)	
@@ -57,13 +62,28 @@ public class User {
 
 	/*----------------------------------------------------*/
 	
-	public String toString() {
+/*	public String toString() {
 	    return "[" + getEmail() 
 	        + ", " + getFirstName()
 	        + ", " + getLastName()
 	        + ", " + getId()
 	        + "]";
-	  }
+	  }*/
+	
+	
+	
+	public User(){
+        //id=0;
+    }
+     
+    public User(int id, String firstName, String lastName, String email, String role, List<Tweets> tweet){
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.role = role;
+        this.tweet = tweet;
+    }
 	
 	public int getId() {
 		return id;
@@ -120,5 +140,11 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+	 /*@Override
+	    public String toString() {
+	        return "User [id=" + id + ", name=" + name + ", age=" + age
+	                + ", salary=" + salary + "]";
+	    }*/
 
 }

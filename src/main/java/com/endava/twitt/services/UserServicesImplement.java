@@ -48,4 +48,9 @@ public class UserServicesImplement implements UserServicesInterface {
 	public User loginUser(String userEmail, String password) {		
 		return this.userDao.loginUser(userEmail, password);
 	}
+
+	@Transactional
+	public User getUserById(Integer id) {		
+		return this.userDao.getUserById(id);
+	}
 }

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Handles requests for the application home page.
  */
 @Controller
-@Scope("session")
+//@Scope("session")
 public class WebController {
 	
 	private static final Logger logger = LoggerFactory
@@ -59,7 +59,7 @@ public class WebController {
 	
 	@RequestMapping(value = "/error_page", method = RequestMethod.GET)
 	public String errorPageGet(HttpSession session) {
-		logger.info("Returning error page grom get.");
+		logger.info("Returning error page from get.");
 		session.removeAttribute("loadedUser");
 		session.removeAttribute("newloadedUser");
 		session.removeAttribute("existingUser");

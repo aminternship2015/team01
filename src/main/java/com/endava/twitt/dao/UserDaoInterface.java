@@ -13,6 +13,8 @@ public interface UserDaoInterface {
 	public void deleteUser(String userEmail);
 	
 	public User getUserByName(String name);
+	
+	public User getUserById(Integer id);
 
 	public void updateUser(User user);
 	

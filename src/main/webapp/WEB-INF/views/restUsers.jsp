@@ -26,12 +26,38 @@ pageEncoding="UTF-8"%>
 </head>
 <body>
 
-<%@include file="partial/nav.jsp" %>
+<%@include file="partial/navRest.jsp" %>
+<div class="container">
+<h3 align="center">REST WEB SERVICES!</h3>
+<br/>
+<!-- <p><a href="userapi"><button class="btn waves-effect waves-ligh cyan lighten-3t">View all users</button></a></p> -->
+<br/>
 
-<h3>Hello REST WEB SERVICES!</h3>
+<form action="userapi" method="POST">
+ID: <input type="text" name="id"  /><br/>
+First Name: <input type="text" name="firstName" /><br/>
+Last Name:<input type="text" name="lastName"  /><br/>
+Email:<input type="text" name="email"/><br/>
+Password:<input type="password" name="password" /><br/>
+<button class="btn waves-effect waves-ligh cyan lighten-3t" type="submit" name="action" value="create">Create User</button><br/><br/>
+<button class="btn waves-effect waves-ligh cyan lighten-3t" type="submit" name="action" value="update">Update User</button><br/><br/>
+<button class="btn waves-effect waves-ligh cyan lighten-3t" type="submit" name="action" value="delete">Delete User</button><br/><br/>
+<button class="btn waves-effect waves-ligh cyan lighten-3t GET" type="submit" name="action" value="deleteid">Get User By Id</button><br/><br/>
+<button class="btn waves-effect waves-ligh cyan lighten-3t" type="reset" >Reset Form</button>
+</form><p><a href="userapi"><button class="btn waves-effect waves-ligh cyan lighten-3t">View all users</button></a></p>
+
+<br/><br/><br/>
+
+<form action="userapi" method="POST">
+ID: <input type="text" name="id"/><br/>
+First Name: <input type="text" name="firstName" /><br/>
+Last Name:<input type="text" name="lastName"  /><br/>
+Password:<input type="password" name="password" /><br/>
+<button class="btn waves-effect waves-ligh cyan lighten-3t" type="submit" name="update">Update User</button>
+</form>
 
 
-
+</div>
 <!-- <br/><br/><br/> -->
 <%@include file="partial/footer.jsp" %>
 

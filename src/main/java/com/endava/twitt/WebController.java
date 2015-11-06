@@ -32,6 +32,12 @@ public class WebController {
 		return "redirect:/home";			
 	}
 	
+	@RequestMapping(value = "restUsers", method = RequestMethod.GET)
+	public String createRestUser(){
+		
+		return "restUsers";
+	}
+	
 	@RequestMapping(value = "/error_page", method = RequestMethod.POST)
 	public String errorPagePost(HttpSession session) {
 		logger.info("Returning error page grom post.");		

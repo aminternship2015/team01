@@ -10,7 +10,7 @@
 				<li><a href="users">Tweet Members</a></li>
 				<li><a href="followedusers">Followers</a></li>
 				<li><a href="editUserProfile">Edit Profile</a></li>
-				<li><a href="userAPI">Rest Web Services</a></li>
+				<!-- <li><a href="userapi">Rest Web Services</a></li> -->
 			</ul>
 			<a href="#!" class="brand-logo hide-on-large-only right"> <img
 				id="mobile-logo" src="resources/img/logo.png" alt="Twitter">
@@ -20,7 +20,7 @@
 				<li><a href="users">Tweet Members</a></li>
 				<li><a href="followedusers">Followers</a></li>
 				<li><a href="editUserProfile">Edit Profile</a></li>
-				<li><a href="userAPI">Rest Web Services</a></li>
+				<!-- <li><a href="userapi">Rest Web Services</a></li> -->
 			</ul>
 		</div>
 	</div>

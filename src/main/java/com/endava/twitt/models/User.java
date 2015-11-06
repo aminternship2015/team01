@@ -62,14 +62,6 @@ public class User {
 
 	/*----------------------------------------------------*/
 	
-/*	public String toString() {
-	    return "[" + getEmail() 
-	        + ", " + getFirstName()
-	        + ", " + getLastName()
-	        + ", " + getId()
-	        + "]";
-	  }*/
-	
 	
 	
 	public User(){

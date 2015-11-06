@@ -48,13 +48,13 @@ Password:<input type="password" name="password" /><br/>
 
 <br/><br/><br/>
 
-<form action="userapi" method="POST">
+<%-- <form action="userapi" method="POST">
 ID: <input type="text" name="id"/><br/>
 First Name: <input type="text" name="firstName" /><br/>
 Last Name:<input type="text" name="lastName"  /><br/>
 Password:<input type="password" name="password" /><br/>
 <button class="btn waves-effect waves-ligh cyan lighten-3t" type="submit" name="update">Update User</button>
-</form>
+</form> --%>
 
 
 </div>

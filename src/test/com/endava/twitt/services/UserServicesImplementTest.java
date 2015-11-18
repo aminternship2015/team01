@@ -27,9 +27,10 @@ public class UserServicesImplementTest {
         applicationContext.close();
     }
 
+    //This test I'll fail to test JIRA. I changed "testUser" to "testUser1"
     @Before
     public void setUp() throws Exception {
-        user = (User) applicationContext.getBean("testUser");
+        user = (User) applicationContext.getBean("testUser1");
     }
 
     @After

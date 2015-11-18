@@ -1,4 +1,4 @@
-package com.endava.test;
+package com.endava.twitt;
 
 
 import com.endava.twitt.models.Tweets;

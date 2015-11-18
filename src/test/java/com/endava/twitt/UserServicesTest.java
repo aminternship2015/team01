@@ -1,22 +1,17 @@
-package com.endava.test;
+package com.endava.twitt;
 
 
-import com.endava.twitt.models.User;
-import com.endava.twitt.services.UserServicesInterface;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
-import junit.framework.Assert;
-
-import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.test.context.ContextConfiguration;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
+import com.endava.twitt.models.User;
+import com.endava.twitt.services.UserServicesInterface;
 
 /**
  * Created by ibalanici on 19/10/2015.
@@ -26,6 +21,8 @@ public class UserServicesTest {
     private User user;
 
     private static ClassPathXmlApplicationContext applicationContext;
+    
+    
 
     @BeforeClass
     public static void setUpOnce() {

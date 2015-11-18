@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
+import com.endava.twitt.models.Follow;
 import com.endava.twitt.services.FollowServiceInterface;
 import com.endava.twitt.services.TweetServiceInterface;
 import com.endava.twitt.services.UserServicesInterface;
@@ -57,7 +58,8 @@ public class FollowTest {
 	
 	@Test
 	public void deleteUserFollowTest() {
-		
+		Follow follow=new Follow();
+		followService.deleteUserFollow(follow);
 	}
 	
 	@Test

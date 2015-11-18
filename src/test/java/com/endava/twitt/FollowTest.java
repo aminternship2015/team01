@@ -1,5 +1,7 @@
 package com.endava.twitt;
 
+import static org.junit.Assert.assertNull;
+
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -60,11 +62,12 @@ public class FollowTest {
 	public void deleteUserFollowTest() {
 		Follow follow=new Follow();
 		followService.deleteUserFollow(follow);
+		assertNull(followService.getFollowByUser("test@test.com"));
 	}
 	
 	@Test
 	public void deleteAllUserFollowTest(){
-		
+	
 	}
 
 }

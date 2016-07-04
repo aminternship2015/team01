@@ -5,5 +5,6 @@
 		<class>com.endava.twitt.models.User</class>
 		<class>com.endava.twitt.models.Tweets</class>
 		<class>com.endava.twitt.models.Follow</class>
+		<class>com.endava.twitt.models.Tweet</class>
 	</persistence-unit>
 </persistence>

@@ -243,6 +243,12 @@
 			<version>1.2.7.RELEASE</version>
 		</dependency>
 		
+		
+
+
+
+	</dependencies>
+	
 		<distributionManagement>
         		<repository>
             			<id>nexus</id>
@@ -250,11 +256,6 @@
             			<url>http://192.168.56.126:8081/repository/RI_TWITT/</url>
        			</repository>
    		</distributionManagement>
-
-
-
-	</dependencies>
-
 	<build>
 
 

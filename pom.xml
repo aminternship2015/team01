@@ -246,6 +246,7 @@
 		<distributionManagement>
         		<repository>
             			<id>nexus</id>
+				<name>Nexus Repository</name>
             			<url>http://192.168.56.126:8081/repository/RI_TWITT/</url>
        			</repository>
    		</distributionManagement>

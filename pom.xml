@@ -252,7 +252,7 @@
 		<distributionManagement>
 			
         		<repository>
-            			<id>nexus</id>
+            			<id>nexus111</id>
 				<name>Nexus Repository</name>
             			<url>https://nexus-uat.endava.net/repository/TEST_RI</url>
        			</repository>

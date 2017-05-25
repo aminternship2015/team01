@@ -260,7 +260,7 @@
 			<snapshotRepository>
            			 <id>snapshots</id>
             			 <name>Snapshots</name>
-           			 <url>http://192.168.56.126:8081/repository/Snapshots/</url>
+           			 <url>https://nexus-uat.endava.net/repository/TEST_RI</url>
        			 </snapshotRepository>
 			
    		</distributionManagement>

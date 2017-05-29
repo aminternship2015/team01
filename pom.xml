@@ -252,7 +252,7 @@
 		<distributionManagement>
 			
         		<repository>
-            			<id>nexus</id>
+            			<id>nexus111</id>
 				<name>Nexus Repository</name>
             			<url>http://172.17.100.26:8081/repository/Test_RRRRRRR/</url>
        			</repository>

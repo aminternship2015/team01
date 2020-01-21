@@ -19,7 +19,7 @@ public class TestConnectionToDB {
 		try {
 			logger.debug("Try to Conect to Database with name Test.");
 			Connection connection = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/test", "root", "admin");			
+					"jdbc:mysql://localhost:3306/test", "root", "");			
 			boolean reachable = connection.isValid(5);
 			
 			if (reachable) {

@@ -18,8 +18,11 @@ public class TestConnectionToDB {
 
 		try {
 			logger.debug("Try to Conect to Database with name Test.");
-			Connection connection = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/test", "root", "");			
+			String url       = "jdbc:mysql://localhost:3306/test";
+			String user      = "root";
+			String password  = "";
+			Connection connection = DriverManager.getConnection(url, user, password);
+			
 			boolean reachable = connection.isValid(5);
 			
 			if (reachable) {

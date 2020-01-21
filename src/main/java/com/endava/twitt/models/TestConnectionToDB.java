@@ -20,7 +20,7 @@ public class TestConnectionToDB {
 			logger.debug("Try to Conect to Database with name Test.");
 			String url       = "jdbc:mysql://localhost:3306/test";
 			String user      = "root";
-			String password  = "";
+			String password  = "admin";
 			Connection connection = DriverManager.getConnection(url, user, password);
 			
 			boolean reachable = connection.isValid(5);
